@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Sale Shopping</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400&family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+       
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Add specific font-family for other elements if needed */
+        h1, h2, span, marquee {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <div>
+            <img class="w-full" src="./banner.jpg" alt="#">
+            <div class="mt-10 text-center">
+                <marquee behavior="alternate" scrollamount="20" direction="left" class="text-2xl text-orange-400 font-bold bg-emerald-300 p-2">50% Off sale 500tk and Use Promo Code.... <span class="text-orange-400">50% Off sale 500tk and Use Promo Code....</span></marquee>
+               
+                <div class="mt-9">
+                    <span class="text-sm font-semibold text-black ">Farewell Special: 50% Off Your Favorites!</span>
+                    <h1 class="font-bold text-3xl mt-2 ">Purchase TK 500  or above & get <span class="text-[#F51FD8] ">50% off</span></h1>
+                    <p class="text-xl font-medium">Use Porom Code <button class="bg-[#F51FD8] py-1 px-5 text-white rounded-lg mt-5">SELL500</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <div class="w-[1150px] mx-auto mt-20 mb-10">
+         <h1 class="text-2xl font-bold mb-4">Skin Cream For Dry Skin.</h1>
+         
+         <div class="flex flex-col lg:flex-row">
+             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+                   <!-- card-one -->
+
+                   <div class="card w-60 h-[400px] bg-base-100 shadow-xl">
+                    <figure class="px-2 pt-2">
+                      <img class="w-40 mt-5 " src="./Olay_Regenerist-removebg-preview.png" alt="Shoes" class="rounded-xl mb-0" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      
+                      <div class="rating gap-1">
+                        <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                        <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400"  />
+                        <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+                        <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" checked />
+                        <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+                      </div>
+
+
+                      <p class="text-xl font-bold" id="card-One-tittle">Olay Regenerist</p>
+                      <p class="font-medium">Price: $<span id="car-price-one">300</span></p>
+                     
+                        
+                     
+                    </div>
+                   <div class="px-10 text-center mb-6">
+                    <button onclick="cardOne()" class="btn btn-primary w-[90%]">Buy Now</button>
+                   </div>
+              
+                  </div>
+
+                    <!-- card-tow -->
+
+                    <div class="card w-60 h-[400px] bg-base-100 shadow-xl">
+                      <figure class="px-2 pt-2">
+                        <img class="w-40 mt-5 " src="./Neutrogena-removebg-preview (1).png" alt="Shoes" class="rounded-xl mb-0" />
+                      </figure>
+                      <div class="card-body items-center text-center">
+                        
+                        <div class="rating gap-1">
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400"  />
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" checked/>
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400"  />
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+                        </div>
+  
+  
+                        <p class="text-xl font-bold">Neutrogena</p>
+                        <p class="font-medium">Price: $<span id="car-price-tow">500</span></p>
+                       
+                          
+                       
+                      </div>
+                     <div class="px-10 text-center mb-6">
+                      <button onclick="cardTow()" class="btn btn-primary w-[90%]">Buy Now</button>
+                     </div>
+                
+                    </div>
+
+                    <!-- card-three -->
+
+                    <div class="card w-60 h-[400px] bg-base-100 shadow-xl">
+                      <figure class="px-2 pt-2">
+                        <img class="w-40 h-52 mt-5 " src="./Himalaya-removebg-preview.png" alt="Shoes" class="rounded-xl mb-0" />
+                      </figure>
+                      <div class="card-body items-center text-center">
+                        
+                        <div class="rating gap-1">
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400"  />
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" checked/>
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400"  />
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+                        </div>
+  
+  
+                        <p class="text-xl font-bold">Himalaya</p>
+                        <p class="font-medium">Price: $<span id="car-price-three">500</span></p>
+                       
+                          
+                       
+                      </div>
+                     <div class="px-10 text-center mb-6">
+                      <button onclick="cardThree()" class="btn btn-primary w-[90%]">Buy Now</button>
+                     </div>
+                
+                    </div>
+                    <!-- card-for -->
+
+                    <div class="card w-60 h-[400px] bg-base-100 shadow-xl">
+                      <figure class="px-2 pt-2">
+                        <img class="w-40 mt-5 " src="./Vince-removebg-preview.png" alt="Shoes" class="rounded-xl mb-0" />
+                      </figure>
+                      <div class="card-body items-center text-center">
+                        
+                        <div class="rating gap-1">
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400"  />
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" />
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400" checked />
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+                        </div>
+  
+  
+                        <p class="text-xl font-bold">Vince</p>
+                        <p class="font-medium">Price: $<span id="car-price-for">900</span></p>
+                       
+                          
+                       
+                      </div>
+                     <div class="px-10 text-center mb-6">
+                      <button onclick="cardFor()" class="btn btn-primary w-[90%]">Buy Now</button>
+                     </div>
+                
+                    </div>
+                    <!-- card-five -->
+
+                    <div class="card w-60 h-[400px] bg-base-100 shadow-xl">
+                      <figure class="px-2 pt-2">
+                        <img class="w-40 mt-5 " src="./glow___lovely-removebg-preview.png" alt="Shoes" class="rounded-xl mb-0" />
+                      </figure>
+                      <div class="card-body items-center text-center">
+                        
+                        <div class="rating gap-1">
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400"  />
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" checked/>
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400"  />
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+                        </div>
+  
+  
+                        <p class="text-xl font-bold">glow lovely</p>
+                        <p class="font-medium">Price: $<span id="car-price-five">300</span></p>
+                       
+                          
+                       
+                      </div>
+                     <div class="px-10 text-center mb-6">
+                      <button onclick="cardFive()" class="btn btn-primary w-[90%]">Buy Now</button>
+                     </div>
+                
+                    </div>
+                    <!-- card-six -->
+
+                    <div class="card w-60 h-[400px] bg-base-100 shadow-xl">
+                      <figure class="px-2 pt-2">
+                        <img class="w-40 mt-5 " src="./Garnier_face_wash-removebg-preview.png" alt="Shoes" class="rounded-xl mb-0" />
+                      </figure>
+                      <div class="card-body items-center text-center">
+                        
+                        <div class="rating gap-1">
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400"  />
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-yellow-400" checked/>
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-lime-400"  />
+                          <input type="radio" name="rating-3" class="mask mask-heart bg-green-400" />
+                        </div>
+  
+  
+                        <p class="text-xl font-bold">Garnier Man</p>
+                        <p class="font-medium">Price: $<span id="car-price-six">350</span></p>
+                       
+                          
+                       
+                      </div>
+                     <div class="px-10 text-center mb-6">
+                      <button onclick="cardsix()" class="btn btn-primary w-[90%]">Buy Now</button>
+                     </div>
+                
+                    </div>
+
+             </div>
+
+
+
+
+             <!-- caculation Box -->
+              <div class="lg:flex-1 ">
+                  <div class="bg-slate-300 h-[100px] p-5 ml-10 rounded-lg">
+                    <h1 class="text-xl font-medium mb-1">Have coupon?</h1>
+                    <input  class="px-3 mb-2" type="text" name="" id="input-value" placeholder="Have coupon"> <span class="text-white bg-[#F51FD8] px-3 py-1 rounded-sm" id="Apply-btn"  onclick="discount ()">Apply</span>
+                  </div>
+
+                  <div class="ml-10 bg-slate-100 rounded-lg p-5 mt-4">
+                    <div class="mb-4" id="entry-list">
+                    
+                    </div>
+
+                      
+                     <div class="mt-8">
+                      <hr>
+                         <h3 class="font-bold text-xl">Total Price: <span id="total-price">00</span></h3>
+                         <h3 class="font-bold text-xl">Discount: <span id="discount-id"></span></h3>
+                         <h3 class="font-bold text-xl">Total: <span id="total-price-in-producet"></span></h3>
+                     </div>
+                     <hr>
+                     <div class="bg-green-300 text-center p-2 rounded-lg mt-8">
+                       <button id="buy-button" onclick="my_modal_5.showModal()"  class="text-xl font-bold" disabled>Make Purchase</button>
+                     </div>
+                  </div>
+              </div>
+         </div>
+
+
+
+          
+
+      </div>
+
+
+       <!-- modal Show -->
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <form method="dialog" class="modal-box">
+          <div class="card w-full bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img class="p-10 h-40" src="/Ok-logo.jpg" alt="" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text 4xl font-bold">Congratulations</h2>
+              <p class="text-2xl">Your Purchase the product</p>
+              <div class="card-actions">
+                <button id="home" class="bg-[#E527B2] px-10  py-3 rounded">Go Home</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </dialog>
+
+    <script src="shopping.js"></script>
+</body>
+</html>
